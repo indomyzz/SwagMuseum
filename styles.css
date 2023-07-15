@@ -103,20 +103,49 @@ abbr{
     margin-bottom: 100px; 
 }
 #p4{
-     margin-top: -270px;
+     margin-left: 15px;
+    margin-top: -270px;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    justify-content: center;
+    display: flex;
 margin-bottom: -200px;
     }
-#p1{
-   font-weight: bold;
+#p5{
+    margin-top: 140px;
+    font-weight: bolder;
+    text-align: left; 
+    margin-left: -500px;
+font-size: 1.5em;
+
+}
+
+    #p6{
+    text-align: center;
+    font-weight: bolder;
+font-size: 1.5em;
+  text-align: left; 
+margin-left: -475px;
+margin-bottom: 150px;
+}
+.gold-txt{
+    color: goldenrod;
+    text-decoration: underline;
+}
+    #p1{
+        white-space: nowrap;
+        font-weight: bolder;
+        font-size: 1.5em;
+        text-align: left; 
     margin-bottom: 600px;
-    font-size: 1.5em; /* Updated */
-    margin-bottom: 140px;  Updated 
-    text-align: left;
-    float: left;
-    margin-left: -100px;
+     /* Updated */
+    margin-bottom: 400px;  
+    
+   
+    
+    margin-left: -200px;
+
 }
 .txt {
     justify-content: left;
@@ -124,7 +153,7 @@ margin-bottom: -200px;
     margin-top: 100px;
     font-family: 'Redwinger Personal Use', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    color: rgb(0, 0, 0); 
-   margin-bottom: 700px;
+   margin-bottom: 750px;
   margin-left: 25px;                                
 }
 .image-container{
@@ -132,11 +161,31 @@ margin-bottom: -200px;
     height: 100%;
 
 }
+ 
+.logos-container {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 220px;
+    margin-right: 28px;
+    margin-left: 10px;
+  }
+.carlogo{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 100%;
+  height: auto;
+   
+
+}
 
 
 .image1 {
     margin-bottom: 300px;
-    width:  90%;
+    width:  80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,9 +194,8 @@ margin-bottom: -200px;
     border-radius: 40px;
     margin-right: 50px;
     float: right;
-    height: 480px;
-} 
-    
+    height: 520px;
+}    
    
 
 .image2{
@@ -161,8 +209,21 @@ margin-bottom: -200px;
     }
  }
  @media only screen and (max-width: 520px){ 
-  
-    #p1, #p2,#p4 {
+    
+    .logos-container {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        margin-right: 28px;
+        margin-left: 25px;
+        margin-top: 230px;
+        transform: translateY(-220px);
+        
+       
+        align-items: flex-start;}
+
+
+    #p1, #p2,#p4, #p6, #p5 {
        display: none;
     }
     .p11{
