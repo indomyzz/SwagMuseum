@@ -84,12 +84,39 @@ abbr{
     color: red;
     text-decoration: underline;
 }
-#p1{
+#p4{
     font-weight: bold;
-    margin-bottom: 100px;
+}
+#p2{
+    font-weight: bold;
+    margin-top: 400px;
+    text-align: center;
+    font-size: 1.5em;
+    float: left;
+    text-align: left;
+}
+.txtp{
+    margin-top: 500px;
+}
+.ppp1{
+    white-space: nowrap;
+    margin-bottom: 100px; 
+}
+#p4{
+     margin-top: -270px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+margin-bottom: -200px;
+    }
+#p1{
+   font-weight: bold;
+    margin-bottom: 600px;
     font-size: 1.5em; /* Updated */
-    margin-bottom: 80px; /* Updated */
-    text-align: center; 
+    margin-bottom: 140px;  Updated 
+    text-align: left;
+    float: left;
+    margin-left: -100px;
 }
 .txt {
     justify-content: left;
@@ -97,26 +124,28 @@ abbr{
     margin-top: 100px;
     font-family: 'Redwinger Personal Use', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    color: rgb(0, 0, 0); 
-   margin-bottom: 400px;
+   margin-bottom: 700px;
   margin-left: 25px;                                
 }
 .image-container{
     width: 100%;
-    height: 60%;
+    height: 100%;
 
 }
 
+
 .image1 {
-    margin-bottom: 20px;
-    width:  50%;
+    margin-bottom: 300px;
+    width:  90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px; 
+    margin-top: 100px; 
     object-fit: cover;
     border-radius: 40px;
     margin-right: 50px;
     float: right;
+    height: 480px;
 } 
     
    
@@ -132,7 +161,8 @@ abbr{
     }
  }
  @media only screen and (max-width: 520px){ 
-    #p1{
+  
+    #p1, #p2,#p4 {
        display: none;
     }
     .p11{
