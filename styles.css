@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins&display=swap');*/
 @import url('https://fonts.cdnfonts.com/css/amonus');
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -128,7 +129,7 @@ margin-bottom: -200px;
     margin-top: 140px;
     font-weight: bolder;
     text-align: left; 
-    margin-left: -480px;
+    margin-left: -440px;
 font-size: 1.5em;
 
 }
@@ -138,7 +139,7 @@ font-size: 1.5em;
     font-weight: bolder;
 font-size: 1.5em;
   text-align: left; 
-margin-left: -495px;
+margin-left: -480px;
 margin-bottom: 150px;
 }
 .gold-txt{
@@ -159,14 +160,36 @@ margin-bottom: 150px;
     margin-left: -230px;
 
 }
+
+
 .red-color{
     color: red;
 }
+#indulge{
+    display: flex;
+    justify-content: center;
+    font: bold;
+    margin-top: 50px;
+   
+}
+#buycars{
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+#buycars:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+}
 .txt {
+    font-weight: bolder;
     justify-content: left;
     text-align: left;
     margin-top: 100px;
-   /* font-family: 'Redwinger Personal Use', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+   
    color: rgb(0, 0, 0); 
    margin-bottom: 750px;
   margin-left: 25px;                                
@@ -225,6 +248,7 @@ margin-bottom: 150px;
     margin-left: 10px;
     
   }
+ 
 .carlogo{
     height: 100px;
     width: 100px;
@@ -267,7 +291,22 @@ margin-bottom: 150px;
     width: 100%;
     height: 100%;
  }
+ #darktheme{
+    margin-left: 10px;
+ }
  @media only screen and (min-width:520px){
+    .txt {
+        font-weight: bolder;
+        justify-content: left;
+        text-align: left;
+        margin-top: 100px;
+       
+       color: rgb(0, 0, 0); 
+       margin-bottom: 750px;
+      margin-right: -35px;                                
+    }
+    
+    
     .txt2{
         display: none;
     }
@@ -287,12 +326,19 @@ margin-bottom: 150px;
     }
  }
  @media only screen and (max-width: 520px){ 
+   #bar{
+    margin-left: 120px;
+   }
     #experiencemobile{
         margin-bottom: 210px;
         text-align: center;
         font-weight: bolder;
-        margin-top: 3px;
+        margin-top: 10px;
+    
     }
+   .cust{
+    display: none;
+   }
     
     #imgcar{
 display: block;
@@ -307,7 +353,7 @@ display: block;
     
     #darktheme{
         position: relative;
-      left: 60px;
+      left: -170px;
       top: -2px;
     }
     
