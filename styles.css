@@ -295,6 +295,31 @@ margin-bottom: 150px;
     margin-left: 10px;
  }
  @media only screen and (min-width:520px){
+    .navllogo{
+        color: black;
+    }
+    #buycars{
+        border: 2px solid rgb(255, 255, 255);
+        padding: 8px;
+        background-color: black;
+        border-radius: 10px;
+        text-decoration: none;
+        padding-left: -2px;
+        padding-right: -2px;
+        color: white;
+    }
+    
+    .nav-link{
+    color: black;
+   }
+    .navbar{
+    background-color: white;
+    border-bottom: 2px solid black; 
+   }
+    #image11{
+    height: 100%;
+    width: 100%;
+   }
     #shoplogo{
         display: none;
     }
@@ -316,6 +341,7 @@ margin-bottom: 150px;
     #p6{
         
         text-align: center;
+        margin-right: 345px;
     }
     #p1{
         margin-top: 65px;
@@ -341,6 +367,7 @@ margin-bottom: 150px;
         display: none;
     }
  }
+ 
  @media only screen and (max-width: 520px){ 
   #shoplogo{
     margin-left: -110px;
