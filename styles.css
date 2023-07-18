@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/amonus');
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -299,17 +299,30 @@ margin-bottom: 150px;
         display: none;
     }
     .txt {
-        font-weight: bolder;
+        font-weight: 900;
         justify-content: left;
-        text-align: left;
-        margin-top: 100px;
-       
+        font-family: "Poppins";
+        margin-top: 150px;
+        margin-left: 130px;
+        font-size: 3em;
+        text-align: center;
        color: rgb(0, 0, 0); 
        margin-bottom: 750px;
       margin-right: -35px;                                
     }
-    
-    
+    #p5{
+        text-align: center;
+    }
+    #p6{
+        
+        text-align: center;
+    }
+    #p1{
+        margin-top: 65px;
+        margin-left: -440px;
+        margin-right: 5px;
+        
+    }
     .txt2{
         display: none;
     }
