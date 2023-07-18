@@ -295,6 +295,9 @@ margin-bottom: 150px;
     margin-left: 10px;
  }
  @media only screen and (min-width:520px){
+    #shoplogo{
+        display: none;
+    }
     .txt {
         font-weight: bolder;
         justify-content: left;
@@ -326,7 +329,10 @@ margin-bottom: 150px;
     }
  }
  @media only screen and (max-width: 520px){ 
-   #bar{
+  #shoplogo{
+    margin-left: -110px;
+  }
+    #bar{
     margin-left: 120px;
    }
     #experiencemobile{
