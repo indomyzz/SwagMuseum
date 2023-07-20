@@ -294,7 +294,46 @@ margin-bottom: 150px;
  #darktheme{
     margin-left: 10px;
  }
+ 
+ .picspc{
+    display: flex;
+    white-space: nowrap;
+    height: 400px;
+    width:400px;
+    border-radius: 30px;
+    margin-right: 5px;
+ }
+ #pic1{
+    
+   margin-left: 40px;
+    
+ }
+ .picspc img{
+    object-fit: cover; 
+ }
+ #flagraceimg{
+    width: 100%;
+    height: 1000px;
+ }
  @media only screen and (min-width:520px){
+    .btn2{
+        display: none;
+    }
+    .btn{
+        margin-top: 510px;
+        margin-left: -645px;
+        background-color: black;
+        color: white;
+        padding-left: -2px;
+        padding-right: -2px;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn:hover{
+        transform: scale(1.1);
+    }
     .navllogo{
         color: black;
     }
@@ -327,7 +366,7 @@ margin-bottom: 150px;
         font-weight: 900;
         justify-content: left;
         font-family: "Poppins";
-        margin-top: 150px;
+        margin-top: 110px;
         margin-left: 130px;
         font-size: 3em;
         text-align: center;
@@ -366,10 +405,34 @@ margin-bottom: 150px;
     .p11{
         display: none;
     }
+        .txtphn{
+            display: none;
+        }
  }
  
  @media only screen and (max-width: 520px){ 
-  #shoplogo{
+    
+    
+    .txtphn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 23px;
+    font-weight: 900;
+  }
+    #ocean{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 70px;
+  }
+    .btn{
+    display: none;
+  }
+    .pics{
+    display: none;
+  }
+    #shoplogo{
     margin-left: -110px;
   }
     #bar{
@@ -462,9 +525,11 @@ display: block;
     top:   40px;
     left: 10px;
     color: rgb(255, 255, 255);
+    display: none;
     }
     .image2{
       display: block;
+      height: 100%;
     }
 .navbar{
     background-color: black;
