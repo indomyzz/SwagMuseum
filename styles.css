@@ -139,7 +139,7 @@ font-size: 1.5em;
     font-weight: bolder;
 font-size: 1.5em;
   text-align: left; 
-margin-left: -480px;
+margin-left: -440px;
 margin-bottom: 150px;
 }
 .gold-txt{
@@ -269,7 +269,7 @@ margin-bottom: 150px;
 
 .image1 {
     margin-bottom: 300px;
-    width:  60%;
+    width:  100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,14 +298,14 @@ margin-bottom: 150px;
  .picspc{
     display: flex;
     white-space: nowrap;
-    height: 400px;
-    width:400px;
+    height: 250px;
+    width:500px;
     border-radius: 30px;
     margin-right: 5px;
  }
  #pic1{
-    
-   margin-left: 40px;
+    margin-right: -60px;
+   margin-top: 40px;
     
  }
  .picspc img{
@@ -367,7 +367,7 @@ margin-bottom: 150px;
         justify-content: left;
         font-family: "Poppins";
         margin-top: 110px;
-        margin-left: 130px;
+        margin-left: 100px;
         font-size: 3em;
         text-align: center;
        color: rgb(0, 0, 0); 
@@ -411,13 +411,15 @@ margin-bottom: 150px;
  }
  
  @media only screen and (max-width: 520px){ 
-    
+    /*.txt2{
+        font-size: 1em;
+    }*/
     
     .txtphn{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: 23px;
+    margin-left: 10px;
     font-weight: 900;
   }
     #ocean{
@@ -456,7 +458,7 @@ display: block;
     #discovermobile{
         margin-top: -400px;
         text-align: center;
-        font-weight: bold;
+        font-weight: 700;
 
     }
     
@@ -513,12 +515,13 @@ display: block;
     .p11{
         text-align: center;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 18px;
+        margin-left: 10px;
     }
     .image1{
       display: none;
     border-radius: 40px;
-   
+   width: 100%;
     }
     .txt {
         position: absolute;
