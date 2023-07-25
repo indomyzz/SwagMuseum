@@ -117,7 +117,7 @@ abbr{
 }
 #p4{
      margin-left: 15px;
-    margin-top: -250px;
+    margin-top: 250px;
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
@@ -205,20 +205,18 @@ margin-bottom: 150px;
 .logos-containerpc{
     height: 100px;
     width: 100px;
-    display: flex;
-    align-items: center;
+    
     margin-top: 220px;
     margin-right: 28px;
     margin-left: 280px;
     
 }
 .carlogopc{
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    
     margin: 10px;
-    max-width: 100%;
-  height: auto;
+   
 }
 
  .logos-containercopy{
@@ -317,6 +315,9 @@ margin-bottom: 150px;
  #flagraceimg{
     width: 100%;
     height: 1000px;
+ }
+ .modelsimg{
+
  }
  @media only screen and (min-width:520px){
     #qtxt{
@@ -470,10 +471,39 @@ margin-bottom: 150px;
         .btn4{
             display: none;
         }
+        .modelsimg{
+            height: 600px;
+            width: 500px;
+            margin-top: 70px;
+        }
+        .center-container{
+            display: none;
+        }
  }
  
  @media only screen and (max-width: 520px){ 
- 
+    .center-container {
+        text-align: center;
+    }
+    .theimages{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tttxt {
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        display: inline-block;
+        margin-bottom: -30px;
+    }
+    
+    #pic{
+    display: none;
+ }
     .quality{
         display: none;
         
@@ -633,11 +663,11 @@ width: 100%;
     .p11{
         text-align: center;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
         margin-left: 10px;
     }
     #Offer{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .image1{
