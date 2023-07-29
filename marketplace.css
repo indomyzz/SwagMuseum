@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/amonus');
 *{
     box-sizing: border-box;
 }
 body{
     padding: 0;
     margin: 0;
-    background-color: white;
+    
     color: black;
     font-family: "Poppins";
+    background-image: url(images/motorbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
 }
 
 
-
+#otor{
+    width: 100%;
+    height: 100%;
+}
 .navbar2 {
   
     justify-content: space-between;
@@ -35,18 +44,100 @@ body{
 
 .navllogo2 {
     color: rgb(255, 255, 255);
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                                  
-    font-size: 20px; 
-   font-weight: 700;
+    font-family: 'Amonus', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                                  
+    font-size: 2em; 
+   
 }
 
 .navbar-logo2 {
     text-decoration: none;
 }
-#cat{
-    margin-top: 110px;
+.categories {
+    
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.categories li {
+    white-space: wrap;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-size: 16px  !important;
+    font-weight: 900;
+    color: rgb(104, 104, 104);
+}
+.horizontal-line {
+    width: 100%; 
+    height: 1px; 
+   background-color: rgb(222, 222, 222); 
+   
+  }
+  
+.categories li a {
+    text-decoration: none;
+    display: inline-block;
+   
+}
+
+#active {
+    color: black;
+    white-space: nowrap;
+}
+
+.categories li:hover {
+    color: rgb(54, 54, 54);
+}
+.card-text {
+    font-size: 1em !important;
+    font-weight: 700 !important;
 display: flex;
 justify-content: center;
-
-    font-weight: 900;
+align-items: center;
+    }
+@media only screen and (max-width:800px){
+.categories li{
+    font-size: 14px;
 }
+.t-shirtsimg{
+    height: 100%;
+    width: 100%;
+}}
+@media only screen and (min-width:800px){
+    .t-shirts-container {
+        display: flex; 
+        justify-content: space-between;
+        display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;  
+      }
+      
+      .t-shirt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+      }
+      
+      .t-shirtsimg {
+        width: 100%;
+        max-width: 300px; 
+        height: auto; 
+      }
+     
+}
+@media only screen and (max-width:330px){
+    .categories li{
+        font-size: 12px;
+    }
+    
+    }
