@@ -3,6 +3,12 @@
 *{
     box-sizing: border-box;
 }
+#money{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
 body{
     padding: 0;
     margin: 0;
@@ -72,7 +78,7 @@ body{
     white-space: wrap;
     margin-right: 5px;
     margin-left: 10px;
-    font-size: 16px  !important;
+    font-size: 18px  !important;
     font-weight: 900;
     color: rgb(104, 104, 104);
 }
@@ -104,40 +110,44 @@ display: flex;
 justify-content: center;
 align-items: center;
     }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:500px){
 .categories li{
-    font-size: 14px;
+    font-size: 18px;
 }
 .t-shirtsimg{
     height: 100%;
     width: 100%;
 }}
-@media only screen and (min-width:800px){
+@media only screen and (min-width:500px){
     .t-shirts-container {
-        display: flex; 
+        display: flex; /* This will create a flex container */
         justify-content: space-between;
         display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;  
+  gap: 20px;  /* This will evenly distribute the t-shirts horizontally */
       }
       
       .t-shirt {
-        display: flex;
-        flex-direction: column;
+        display: flex; /* This will create a flex container for each t-shirt and its text */
+        flex-direction: column; /* Stack the image and text vertically */
         align-items: center;
-        justify-content: center; 
+        justify-content: center; /* Center the items horizontally within each t-shirt container */
       }
       
       .t-shirtsimg {
         width: 100%;
-        max-width: 300px; 
-        height: auto; 
+        max-width: 300px; /* Set the maximum width of the image */
+        height: auto; / /* Make sure the image fits within its container */
       }
      
 }
-@media only screen and (max-width:330px){
+@media only screen and (max-width:390px){
     .categories li{
-        font-size: 12px;
+        font-size: 16px  !important;
     }
-    
+    @media only screen and (max-width:320px){
+        .categories li{
+            font-size: 14px  !important;
+        }
+    }    
     }
