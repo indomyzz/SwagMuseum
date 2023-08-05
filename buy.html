@@ -1,0 +1,99 @@
+<!-- buy.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="buy.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAGMUSEUM - Order Now! </title>
+</head>
+<body>
+ 
+    <nav class="navbar2">
+        <a href="#" class="navbar-logo2">
+            <p id="navlogoo2 " class="navllogo2">
+            SWAGMUSEUM
+            </p>
+        </a>
+    </nav>
+    <h1>S</h1>
+  <div class="container">
+    <h2 id="selectedTeeName" ></h2>
+    <br>
+    <br>
+    <p id="selectedTeePrice"></p>
+<img src="" alt="" id="selectedTeeImage" >
+
+
+<div class="containersize">
+<div class="sizes">
+
+<p class="editsize">XS</p>
+<p class="editsize" >S</p>
+<p class="editsize">M</p>
+<p class="editsize">L</p>
+<p class="editsize">XL</p>
+</div>
+</div>
+<div class="btnconatiner">
+    <button class="btns" id="btn1">Order Now!</button>
+    <br>
+    <button class="btns" id="btn2">  <i class="far fa-bookmark fa-sm" style="color: #000000;"></i>ㅤSave For Later!</button>
+</div>
+
+  </div>
+
+  <script>
+    // Retrieve the t-shirt details from sessionStorage
+    const selectedTeeName = sessionStorage.getItem('selectedTeeName');
+    const selectedTeePrice = sessionStorage.getItem('selectedTeePrice');
+    const selectedTeeImage = sessionStorage.getItem('selectedTeeImage');
+
+    // Display the t-shirt details on the page
+    const teeNameElement = document.getElementById('selectedTeeName');
+    const teePriceElement = document.getElementById('selectedTeePrice');
+    const teeImageElement = document.getElementById('selectedTeeImage');
+
+    teeNameElement.textContent = selectedTeeName;
+    teePriceElement.textContent = selectedTeePrice;
+    teeImageElement.src = selectedTeeImage;
+    teeImageElement.alt = selectedTeeName;
+
+
+  
+
+document.addEventListener('DOMContentLoaded', function() {
+  let currentlySelectedSize = null;
+
+  const mySizes = document.querySelectorAll('.editsize');
+
+  mySizes.forEach(size => {
+    size.addEventListener('click', function() {
+      // Reset the previous selected size to default if exists
+      if (currentlySelectedSize) {
+        currentlySelectedSize.style.backgroundColor = "initial";
+        currentlySelectedSize.style.color = "initial";
+      }
+
+      // Set the current size as the new selected size
+      currentlySelectedSize = size;
+
+      // Apply the new selected styles
+      size.style.backgroundColor = "black";
+      size.style.color = "white";
+      size.style.textDecoration = "none";
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+      const myBtn = document.getElementById("btn2");
+
+      myBtn.addEventListener("click", function() {
+        myBtn.innerHTML = ' <i class="fas fa-bookmark fa-sm" style="color: #000000;"></i> ㅤSaved!';
+      });
+    });
+  </script>
+</body>
+</html>
