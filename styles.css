@@ -3,9 +3,35 @@
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
-.navbar {
-  height: 100px;
-    justify-content:center;
+#fimg{
+    margin-left: 26px;
+}
+#fimgtxt{
+    margin-left: 26px;
+}
+
+.t-shirtsimg {
+    height: auto;
+    width: 270px;
+}
+
+.things{
+    color: white;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: black;
+  margin-right: 70px;
+}
+
+
+
+
+.navbar2 {
+  margin-top: 40px;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     background-color: rgb(0, 0, 0);
@@ -13,11 +39,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 35px;
+    height: 80px;
     z-index: 1000;
 }
-
-.navbar-logo {
+.navbar-logo2 {
+    text-decoration: none;
+}
+.navbar-logo2 {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -25,15 +53,11 @@
      margin-top: 1;
 }
 
-.navllogo {
+.navllogo2 {
     color: rgb(255, 255, 255);
     font-family: 'Amonus', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                                  
     font-size: 2em; 
    
-}
-
-.navbar-logo {
-    text-decoration: none;
 }
 .bigimg{
     width: 100%;
@@ -43,8 +67,8 @@
 #bars{
     height: 45px;
     width: 45px;
-    margin-top: -8px;
-   
+    margin-top: -4px;
+   margin-left: -10px;
 }
 #X{
     width: 40px;
@@ -62,14 +86,14 @@ body{
 font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 :root {
-    --mainColor: #ffffff ;
+    --mainColor: #000000 ;
     
     --color3: #080808;
 }
 .sidebar-wrapper {
-    max-width: 300px;
-    min-width: 300px;
-    height: 100vh;
+    max-width: 400px;
+    min-width: 400px;
+    height: 200vh;
     background-color: var(--mainColor);
     box-shadow:  0 0 8px #000;
     position: fixed;
@@ -129,12 +153,12 @@ font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
 .sidebar-wrapper .sidebar nav .menu li a {
     display: block;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     text-transform: capitalize;
     padding: 20px;
     transition: 0.5s ease;
     margin-left: 10px;
-  
+  font-size: 25px;
 }
 .sidebar-wrapper .sidebar nav .menu li a:hover {
     background: -webkit-linear-gradient(45deg,var(--color1),var(--color2));
@@ -176,7 +200,7 @@ font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
 
 
 #active{
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(21, 21, 21);
     margin-top: -18px;
 }
 
@@ -353,23 +377,20 @@ margin-bottom: 150px;
    
 }
 .p11pc{
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-font-weight: 700;
+
+    margin-left: 70px;
+color: grey;
 font-size: 20px;
 margin-bottom: 25px;
-margin-top: -25px;
+margin-top: -10
+px;
 }
 .txtpc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -250px;
-    font-weight: 900;
-    font-size: 5em;
+   
+   margin-left: 70px;
+    
+    font-weight: 300;
+    font-size:  30px;
 }
  .logos-containercopy{
     height: 100px;
@@ -437,9 +458,9 @@ margin-top: -25px;
     height: 100%;
   } 
 
-.image2{
+.image2{ 
     display: none;
-    width: 100%;
+    
     height: 100%;
  }
  #darktheme{
@@ -489,18 +510,18 @@ margin-top: -25px;
     margin-top: -50px;
  }
  #upcont{
-    background-color: orange;
+    background-color: rgb(255, 119, 0);
  position: fixed;
-    margin-top: -77px;
+    margin-top: -15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 60px;
     width: 100%;
    
  }
  #up{
-  
+  font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,8 +544,43 @@ color: white;
 }
  }
  @media only screen and (min-width:922px){
+    .t-shirts-container {
+        display: flex; /* This will create a flex container */
+        justify-content: space-between;
+        display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;  /* This will evenly distribute the t-shirts horizontally */
+      }
+      
+      .t-shirt {
+        display: flex; /* This will create a flex container for each t-shirt and its text */
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center;
+        justify-content: center; /* Center the items horizontally within each t-shirt container */
+      }
+      
+      .t-shirtsimg {
+        width: 100%;
+        max-width: 300px; /* Set the maximum width of the image */
+        height: auto; / /* Make sure the image fits within its container */
+      }
+     
+    .navbar-logo2 {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      margin-left: 10px;
+        justify-content: flex-start; /* Change this from "center" to "flex-start" */
+    }
+    
+    #bars{
+        display: none;
+    }
+    .sidebar-wrapper{
+        display: none;
+    }
     #upcont{
-        background-color: orange;
+        background-color: rgb(255, 119, 0);
      position: fixed;
         margin-top: -7px;
         display: flex;
@@ -661,9 +717,10 @@ color: white;
     .nav-link{
     color: rgb(255, 255, 255);
    }
-    .navbar{
+    .navbar2{
     background-color: rgb(0, 0, 0);
     border-bottom: 2px solid black; 
+    margin-top: 35pxb;
    }
     #image11{
     margin-top:30px;
@@ -724,7 +781,7 @@ color: white;
     }
     
     
-    .p11{
+    .p11mobile{
         display: none;
     }
         .txtphn{
@@ -744,6 +801,26 @@ color: white;
  }
  
  @media only screen and (max-width: 922px){ 
+    #fimg{
+        margin-left: 30px;
+    }
+    .t-shirts-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       gap: 100px;
+    }
+    
+    .t-shirt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(50% - 10px); /* Adjust the width to leave space for the gap */
+    }
+    .Tcont{
+        display: none;
+    }
     .txtpc{
         display: none;
     }
@@ -822,19 +899,24 @@ color: white;
         height: 100%;
         margin-top: -200px;
     }
-    
+    .p11mobile{
+margin-top: -10px;
+        margin-left: 20px;
+        color: grey;
+    }
     .txtphn{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: 10px;
-    font-weight: 900;
-  }
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: 300;
+    }
     #ocean{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 70px;
+      
+            margin-left: auto;
+            margin-right: auto;
+           
+       width: auto;
+        
+      
   }
     .btn{
     display: none;
@@ -923,6 +1005,10 @@ width: 100%;
         align-items:left    ;
     
     }
+    .navbar{
+        height: 80px;
+       
+    }
 .pic3{
     display: none;
 }
@@ -941,9 +1027,9 @@ width: 100%;
     }
 
     .image1{
-      display: none;
+      
     border-radius: 40px;
-   width: 100%;
+   width: 100% !important;
     }
     .txt {
         position: absolute;
@@ -957,28 +1043,12 @@ width: 100%;
       margin-top: 5px;
       height: 100%;
     }
-.navbar{
-    background-color: black;
-    height: 70px;
-}
+
 .nav-link{
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
-.navbar-logo {
-    display: flex !important;
-    align-items: center !important;
-    margin-left: 10px;
-    text-decoration: none;
-    flex-grow: 1;
-}
-.navllogo {
-    color: white;
-    margin: 0 !important;
-    font-size: 25px;
-    
-    font-family: 'Amonus', sans-serif ;
-}
+
  }
  @media only screen and (max-width:376px){
     .logos-containercopy{
