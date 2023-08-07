@@ -1,1016 +1,175 @@
-
-@import url('https://fonts.cdnfonts.com/css/amonus');
-@import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
-
-
-
-
-
-.navbar2 {
-  margin-top: 30px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    z-index: 1000;
-}
-.navbar-logo2 {
-    text-decoration: none;
-}
-.navbar-logo2 {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     margin-top: 1;
-}
-
-.navllogo2 {
-    color: rgb(255, 255, 255);
-    font-family: 'Amonus', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                                  
-    font-size: 2em; 
-   
-}
-.bigimg{
-    width: 100%;
-    margin-top: 60px;
-    height: 100%;
-}
-#bars{
-    height: 45px;
-    width: 45px;
-    margin-top: -4px;
-   margin-left: -10px;
-}
-#X{
-    width: 40px;
-    height: 40px;
-    margin-right: -10px;
-}
-*{
-    box-sizing: border-box;
-}
-body{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-:root {
-    --mainColor: #ffffff ;
-    
-    --color3: #080808;
-}
-.sidebar-wrapper {
-    max-width: 300px;
-    min-width: 300px;
-    height: 100vh;
-    background-color: var(--mainColor);
-    box-shadow:  0 0 8px #000;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 0.5s ease;
-}
-.sidebar-wrapper .sidebar {
-    width: 100%;
-}
-.sidebar-wrapper .sidebar .avatar-wrapper {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    font-size: 1.5rem;
-    background: url("./images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 10;
-    background-color: rgb(0, 0, 0);
-}
-.sidebar-wrapper .sidebar .avatar-wrapper::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: -11;
-}
-.sidebar-wrapper .sidebar .avatar-wrapper .avatar {
-    width: 35%;
-    clip-path: circle();
-    box-shadow: 0 0 8px #000;
-}
-.userName{
-    font-family: 'Amonus', sans-serif;
-    font-size: 25px;
-}
-.sidebar-wrapper .sidebar nav {
-    width: 100%;
-}
-.sidebar-wrapper .sidebar nav .menu {
-    list-style: none;
-}
-.sidebar-wrapper .sidebar nav .menu li {
-    border-bottom: 1px solid #4e4e4e;
-    margin-left: -50px;
-}
-.sidebar-wrapper .sidebar nav .menu li a {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-    text-transform: capitalize;
-    padding: 20px;
-    transition: 0.5s ease;
-    margin-left: 10px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="images/icon1.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwagMuseum - Best Clothes With Best Quality!</title>
+</head>
+<body>
+                            <header>
+ <div id="upcont">
+                                <p id="up"> FREE 2-DAY SHIPPING IN ALL MOROCCO</p> 
+   </div>
   
-}
-.sidebar-wrapper .sidebar nav .menu li a:hover {
-    background: -webkit-linear-gradient(45deg,var(--color1),var(--color2));
-}
-.sidebar-wrapper .sidebar nav .menu li a i {
-    margin-right: 15px;
-}
-.close {
-    cursor: pointer;
-    position: absolute;
-    top: 2px;
-    right: 10px;
-}
-.open {
-    cursor: pointer;
-    position: absolute;
-    top: 2px;
-    left: 10px;
-    color: #fff;
-    font-size: 1.5rem;
-}
-#check {
-    display: none;
-}
-#check:checked ~ .sidebar-wrapper {
-    left: 0;
-}
-
-.btn{
-    padding: 10px;
-    background-color: white;
-    font-weight: bold;
-    box-shadow: 0 0 6px white;
-    border-radius: 10px;
-    border: none;
-    margin-left: -30px;
-}
-
-
-
-#active{
-    background-color: rgb(207, 207, 207);
-    margin-top: -18px;
-}
-
-
-.nav-item {
-    margin-right: 20px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold
-    
-    
-}
-.nav-link:hover{
-    text-decoration: underline;
-}
-
-
-#changeplace{
-    margin-top: 17px;
-    font-size: 20px;
-    margin-left: 15px;
-}
-#hh1{
-margin-top: 100px;
-text-align: center;
-}
-#pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    
-}
-
-abbr{
-    color: red;
-    text-decoration: none;
-}
-#p4{
-    font-weight: bold;
-}
-#p2{
-    font-weight: bold;
-    margin-top: 400px;
-    text-align: center;
-    font-size: 1.5em;
-    float: left;
-    text-align: left;
-}
-.txtp{
-    margin-top: 600px;
-
-}
-.ppp1{
-    white-space: nowrap;
-    margin-bottom: 100px; 
-}
-#p4{
-     margin-left: 15px;
-    margin-top: 250px;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-margin-bottom: -200px;
-    }
-#p5{
-    margin-top: 140px;
-    font-weight: bolder;
-    text-align: left; 
-    margin-left: -440px;
-font-size: 1.5em;
-
-}
-
-    #p6{
-    text-align: center;
-    font-weight: bolder;
-font-size: 1.5em;
-  text-align: left; 
-margin-left: -440px;
-margin-bottom: 150px;
-}
-.gold-txt{
-    color: goldenrod;
-    
-}
-    #p1{
-        white-space: nowrap;
-        font-weight: bolder;
-        font-size: 1.5em;
-        text-align: left; 
-    margin-bottom: 600px;
-     /* Updated */
-    margin-bottom: 400px;  
-    
+   <nav class="navbar2">
+    <a href="#" class="navbar-logo2">
+        <p id="navlogoo2 " class="navllogo2">
+        SWAGMUSEUM
+        </p>
+    </a>
+    <div class="menu-bar">
    
+    <div class="Tcont">
+        <div class="things">
+            
+            <p class="theT">Shop <i class="fas fa-caret-down"></i></p>
+            
+             
+            
+            
+            
+            <p class="theT">New In</p>
+            <p class="theT">Size Guide</p>
+            <p class="theT">About Us</p>
+            <p class="theT">FAQs</p>
+            
+            
     
-    margin-left: -230px;
+    </div>
+  </div>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <label for="check" class="open" id="changeplace"><img src="images/lightbars.png" id="bars">
 
-}
+        </label>
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <div class="avatar-wrapper">
+                    <label for="check" class="close"><img src="images/X.png" id="X"></label>
+                  <!--<img class="avatar" src="images/hat.png" alt="avatar">--> 
+                   <p class="userName">SWAGMUSEUM</p>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html" id="active"> Home</a></li>
+                        <li><a href="marketplace.html">
+                            Shop</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--<a class="navbar-logo" href="#">
+            <div class="navllogo" id="navlogoo">SWAG MUSEUM</div>
+        </a>
+       <ul class="navbar-nav">-->
 
 
-.red-color{
-    color: red;
-    text-decoration: none;
-}
-#indulge{
-    display: flex;
-    justify-content: center;
-    font: bold;
-    margin-top: 50px;
+           
+         <!-- <li class="nav-item">
+                <a class="nav-link" href="#" id="services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://bento.me/indomyzz" target="_blank" id="contact">Contact</a>
+            </li> 
+         
+            
+            <li>
+                <a href="marketplace.html" class="nav-link" id="shopp" >
+                    <i class="fas fa-shopping-bag fa-2x" style="color: #ffffff;" id="shoplogo"></i>
+
+                </a>
+            </li>
+                </a>  
+                
+                <li class="nav-item">
+                <a class="nav-link" href="marketplace.html" id="buycars">Shop Now!</a>
+            </li>-->
+          
+              
+              
+        </ul>
+    </nav>
    
-}
-#buycars{
-    border: 2px solid white;
-    padding: 8px;
-    border-radius: 10px;
-    text-decoration: none;
-
-}
-#buycars:hover{
-    background-color: white;
-    color: black;
-    transition: all 0.5s ease;
-}
-.txt {
-    font-weight: bolder;
-    justify-content: left;
-    text-align: left;
-    margin-top: 100px;
    
-   color: rgb(0, 0, 0); 
-   margin-bottom: 750px;
-  margin-left: 25px;                                
-}
-.image-container{
-    width: 100%;
-    height: 100%;
-    
-    
-
-}
-.logos-containerpc{
-   text-align: center;
-    margin-top: 170px;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    margin-left: -80px;
-}
-.logo-item {
-    height: 100%;
-    width: 15%;
-    margin: 100px; 
-    margin-top: -70px;
-}
-
-.carlogopc{
-   height: 20%;
-   width: 150%;
-   margin: 0px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   
-}
-.p11pc{
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-font-weight: 700;
-font-size: 20px;
-margin-bottom: 25px;
-margin-top: -25px;
-}
-.txtpc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -250px;
-    font-weight: 900;
-    font-size: 5em;
-}
- .logos-containercopy{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    margin-top: 220px;
-    margin-right: 28px;
-    margin-left: 10px;
- }
-
- .carlogocopy{
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
-    margin: 10px;
-    max-width: 100%;
-  height: auto;
- }
-.logos-container {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    margin-top: 220px;
-    margin-right: 28px;
-    margin-left: 10px;
-    
-  }
- 
-.carlogo{
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
-    margin: 10px;
-    max-width: 100%;
-  height: auto;
-}
-.pic3{
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
-    margin: 10px;
-    max-width: 100%;
-  height: auto;
-}
-
-
-.image1 {
-    
-    width:  50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px; 
-    object-fit: cover;
-    border-radius: 40px;
-    margin-right: 50px;
-    float: right;
-    height:  50%;
-}    
-  #imgcar{
-    display: none;
-    width: 100%;
-    height: 100%;
-  } 
-
-.image2{
-    display: none;
-    width: 100%;
-    height: 100%;
- }
- #darktheme{
-    margin-left: 10px;
- }
- 
- .picspc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    height: 250px;
-    width:450px;
-    border-radius: 30px;
-    margin-right: 5px;
- }
- #pic1{
-    margin-right: -60px;
-   margin-top: 40px;
-    
- }
- .picspc img{
-    object-fit: cover; 
- }
- #flagraceimg{
-    width: 100%;
-    height: 1000px;
- }
- .tttxt2{
-    white-space: nowrap;
-        text-align: center;
-        font-weight: 700;
-        font-size: 20px;
-        display: inline-block;
-        margin-bottom: -30px;
-        
- }
- #confort{
-    width: 100%;
-    height: 100%;
-    
- }
- #qtxt2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: -50px;
- }
- #upcont{
-    background-color: orange;
- position: fixed;
-    margin-top: -77px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    width: 100%;
-   
- }
- #up{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     animation-timing-function: linear; 
-height: 45px;
-animation-name: Move;
-animation-iteration-count: infinite;
-animation-duration: 5s;
-width: 100%;
-color: white;
-
- }
- @keyframes Move {
-0% {
-  transform: translateX(-400px); 
-}
-
-100%{
-  transform: translateX(350px);
-}
- }
- @media only screen and (min-width:922px){
-    .navbar-logo2 {
-        flex: 1;
-        display: flex;
-        align-items: center;
-      margin-left: 10px;
-        justify-content: flex-start; /* Change this from "center" to "flex-start" */
-    }
-    
-    #bars{
-        display: none;
-    }
-    .sidebar-wrapper{
-        display: none;
-    }
-    #upcont{
-        background-color: orange;
-     position: fixed;
-        margin-top: -7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 45px;
-        width: 100%;
-        z-index: 1000;
-     }
-     #up{
-      
-        display: flex;
-        justify-content: center;
-        align-items: center;
-         animation-timing-function: linear; 
-    height: 45px;
-    animation-name: Move;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
-    width: 100%;
-    color: white;
-    
-     }
-     @keyframes Move {
-    0% {
-      transform: translateX(-800px); 
-    }
-    
-    100%{
-      transform: translateX(800px);
-    }}
-    #confort{
-        display: none;
-    }
-    #qtxt2{
-        display: none;
-    }
-    #confot{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 1880px;
-        width: 450px;
-        height:600px;
-        margin-bottom: 200px;
-    }
-    #qtxt{
-        font-size: 1.5em;
-        font-weight: 700;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -150px;
-    }
-    .btn1{
-        background-color: rgb(255, 254, 254);
-        color: rgb(0, 0, 0);
-        padding-left: -2px;
-        padding-right: -2px;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 25px;
-        transition: all 0.3s ease-in-out;
-        margin-right: 10px;
-        border: 1px solid black;
-        font-weight: 700;
-    }
-    .btn3{
-        display: none;
-    }
-    
-    .btn2{
-        display: none;
-    }
-    
-    .btn{
-        margin-top: 460px;
-        margin-left: -700px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        padding-left: -2px;
-        padding-right: -2px;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 25px;
-        transition: all 0.3s ease-in-out;
-        margin-right: 10px;
-    }
-    .center-container{
-        display: none;
-    }
-    .btn:hover{
-        background-color: rgb(27, 27, 27);
-        
-    }
-    #navlogoo{
-        display: flex;
-        justify-content: center;
-        align-items: center;}
-    .navllogo{
-        color: rgb(255, 255, 255);
-        
-      
-    }
-    #motor{
-        border: 2px solid rgb(0, 0, 0);
-        padding: 8px;
-        color: black;
-        border-radius: 10px;
-        text-decoration: none;
-        padding-left: -2px;
-        padding-right: -2px;
-       transition: all 0.3s ease-in-out;
-    }
-    #motor:hover{
-        background-color: black;
-        color: white;
-    }
-    #buycars{
-        border: 2px solid rgb(255, 255, 255);
-        padding: 8px;
-        background-color: black;
-        border-radius: 10px;
-        text-decoration: none;
-        padding-left: -2px;
-        padding-right: -2px;
-        color: white;
-    }
-    #buycars:hover{
-       background-color: black;
-       color: white;
-    }
-    .nav-link{
-    color: rgb(255, 255, 255);
-   }
-    .navbar{
-    background-color: rgb(0, 0, 0);
-    border-bottom: 2px solid black; 
-   }
-    #image11{
-    margin-top:30px;
-        margin-bottom: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        height:70%;
-    width: 70%;
-   }
-   .image-container {
-    text-align: center;
-    
-  }
-    #shoplogo{
-        display: none;
-    }
-    .txt {
+                           
+    <div id="pic">
+       <img src="images/highQ.jpg" class="bigimg" id="m1">
        
-        font-weight: 900;
-        justify-content: left;
-        font-family: "Poppins";
-        margin-top: 140px;
-        margin-left: 150px;
-        font-size: 3.5em;
-        text-align: center;
-       color: rgb(0, 0, 0); 
-       margin-bottom: 750px;
-      margin-right: -45px;                                
-    }
-    #p5{
-        text-align: center;
-    }
-    #p6{
-        margin-top: 10px;
-        text-align:center;
-        margin-left: -515px;
-        font-size: 22px;
-        color: rgb(0, 0, 0);
-        font-weight: 700;
-    }
-    #p1{
-        margin-top: 55px;
-        margin-left: -425px;
-        margin-right: 10px;
-        font-size: 20px;
-    }
-    .txt2{
-        display: none;
-    }
-    #bar{
-        display: none;
-    }
-    .logos-container {
-        display: none;    }
-    .logos-containercopy{
-        display: none;
-    }
-    
-    
-    .p11{
-        display: none;
-    }
-        .txtphn{
-            display: none;
-        }
-        .btn4{
-            display: none;
-        }
-        .modelsimg{
-            height: 600px;
-            width: 500px;
-            margin-top: 70px;
-        }
-        .center-container{
-            display: none;
-        }
- }
- 
- @media only screen and (max-width: 922px){ 
-    .txtpc{
-        display: none;
-    }
-    .p11pc{
-        display: none;
-    }
-    
-    
-    .center-container {
-        text-align: center;
-    }
-    .theimages{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .tttxt {
-        white-space: nowrap;
-        text-align: center;
-        font-weight: 700;
-        font-size: 20px;
-        display: inline-block;
-        margin-bottom: -30px;
-    }
-    
-    #pic{
-    display: none;
- }
-    .quality{
-        display: none;
-        
-    }
-    .btn4{
-        margin-top:1380px;
-        margin-bottom: 400px;
-        
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 25px;
-        display: block;
-        background-color: black;
-        font-weight: 700;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .btn3 {
-        margin-top: 1300px;
-        margin-bottom: 100px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 25px;
-        display: block;
-        border: none;
-        font-weight: 700;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    #motor{
-        display: none;
-    }
-    .btn1{
-        display: none;
-    }
-    #space{
-        width: 100%;
-        height: 100%;
-        margin-top: -200px;
-    }
-    
-    .txtphn{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: 10px;
-    font-weight: 900;
-  }
-    #ocean{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 70px;
-  }
-    .btn{
-    display: none;
-  }
-    .pics{
-    display: none;
-  }
-    #shoplogo{
-    margin-left: 20px;
-  }
-  #contactlogo{
-    margin-left: -100px;
-  }
-    #bar{
-    margin-left: 120px;
-   }
-    #instagram{
-        margin-left: 35px;
-        
-    }
-   
-   #experiencemobile{
-        margin-bottom: 210px;
-        text-align: center;
-        font-weight: bolder;
-        margin-top: 10px;
-        font-size: 16px;
-        margin-right:5px ;
-    }
-   .cust{
-    display: none;
-   }
-    
-    #imgcar{
-display: block;
-width: 100%;
-    }
-    
-    #discovermobile{
-        margin-top: -400px;
-        text-align: center;
-        font-weight: 700;
-
-    }
-    
-    #darktheme{
-        position: relative;
-      left: -170px;
-      top: -2px;
-    }
-    
-    #buycars, #services, #contact{
-        display: none;
-    }
-    
-    .carlogopc{
-        display: none;
-    }
-    .logos-containerpc{
-        display: none;
-    }
-    
-    .logos-containercopy{
-        height: 100px;
-        width: 100px;
-        display: flex;
-        margin-right: 28px;
-        margin-left: 28px;
-        
-        transform: translateY(-420px);
-        
-      
-        align-items:left    ;
-    
-    }
-    .logos-container {
-        height: 100px;
-        width: 100px;
-        display: flex;
-        margin-right: 28px;
-        margin-left: 28px;
-        margin-top: 230px;
-        transform: translateY(-220px);
-        
-      
-        align-items:left    ;
-    
-    }
-    .navbar{
-        height: 80px;
        
-    }
-.pic3{
-    display: none;
-}
-
-    #p1, #p2,#p4, #p6, #p5 {
-       display: none;
-    }
-    .p11{
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    #Offer{
-        font-size: 20px;
-    }
-
-    .image1{
-      display: none;
-    border-radius: 40px;
-   width: 100%;
-    }
-    .txt {
-        position: absolute;
-    top:   40px;
-    left: 10px;
-    color: rgb(255, 255, 255);
-    display: none;
-    }
-    .image2{
-      display: block;
-      margin-top: 5px;
-      height: 100%;
-    }
-
-.nav-link{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
- }
- @media only screen and (max-width:376px){
-    .logos-containercopy{
-        height: 100px;
-        width: 100px;
-        display: flex;
-        margin-right: 28px;
-        margin-left: 10px;
-        
-        transform: translateY(-420px);
-        
-      
-        align-items:left    ;
+       
+       
+        <!--<h1 class="txt" id="txtt">Watches<span class="red-color">Museum</span></h1>
+     
+        <p id="p1"><abbr> The #1 Top Trending </abbr>sellers of Watches!</p>
+        <br>
+        <p id="p6"> Discover elegance and precision in every tick at WatchesMuseum. elevate your style with our exceptional watches. </p>
+        <br>
     
-    }
-    .logos-container {
-        height: 100px;
-        width: 100px;
-        display: flex;
-        margin-right: 28px;
-        margin-left: 10px;
-        margin-top: 230px;
-        transform: translateY(-220px);
+        <br>
         
-      
-        align-items:left    ;
-    
-    }
+        <div class="image-container">
+            <div class="image-container">
+    <img src="images/roleximg.jpg" class="image1" id="image11">
+              </div>
+              
+                <a href="marketplace.html">
+              <button class="btn">Shop Now!</button></a>
+          -->
+        
+        
+       
+    </div>
+    <img src="https://i.pinimg.com/564x/47/9b/fd/479bfd808c53e13b1200b687f364d024.jpg" class="image2" id="ocean" >
+    </div>
+    <h1 class="txtphn">NEW IN</h1> 
 
- }
+    <p class="p11mobile">S/S23 COLLECTION</p>
+
+  
+
+    
+</header>
+            <body>
+
+
+<!--fooor pc-->
+<h1 class="txtpc">NEW IN</h1> 
+
+<p class="p11pc">S/S23 COLLECTION</p>
+<div class="t-shirts-container">
+    <div class="t-shirt" data-name="FLAME BREATHING - MESH SHORT" data-price="$99.00" id="fimgtxt">
+        <a href="buy.html">
+            <img src="https://i.pinimg.com/564x/97/34/86/9734866bc819f681ca16b7bcafeafa32.jpg"  class="t-shirtsimg" id="fimg">
+        </a>
+        <div class="card-text">FLAME BREATHING - MESH SHORT</div>
+        <p class="money">$99.00</p>
+    </div>
+
+    <div class="t-shirt" data-name="BLACK 2 - Full Sleeve V-neck Tee" data-price="$60.00">
+        <a href="buy.html">
+            <img src="https://i.pinimg.com/736x/18/1e/99/181e9926b043590e0b3d72947bc53073.jpg" class="t-shirtsimg">
+        </a>
+        <div class="card-text">BLACK 2 - Full Sleeve V-neck Tee</div>
+        <p class="money">$60.00</p>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="mk.js"></script>
+</body>
+</html>
+
