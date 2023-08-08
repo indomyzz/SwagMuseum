@@ -922,7 +922,8 @@ margin-top: -10px;
             margin-left: auto;
             margin-right: auto;
            
-       width: auto;
+       width:   auto;
+       height: auto;
         
       
   }
@@ -1056,9 +1057,30 @@ width: 100%;
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
-
+#simg{
+    margin-left: 15px;
+}
  }
- @media only screen and (max-width:376px){
+ @media only screen and (max-width:390px){
+   #fimgprice{
+    margin-left: -20px;
+   }
+    #fimg{
+        margin-left: -10px;
+    }
+
+#fimgtxt{
+    margin-left: 25px;
+}
+ #sprice {
+    margin-right:25px;
+ }
+#simg{
+        margin-left: -5px;
+    }
+    #simgtxt{
+        margin-right: -45px;
+    }
     .t-shirts-container {
         display: flex;
         justify-content: space-between;
