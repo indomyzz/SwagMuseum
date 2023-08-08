@@ -1062,7 +1062,30 @@ width: 100%;
 }
  }
  @media only screen and (max-width:390px){
-   #fimgprice{
+    .fp2{
+        margin-left: -20px;
+       }
+    .sp2{
+        margin-right:25px;
+     }
+    #simg2{
+            margin-left: -5px;
+        }
+        #simgtxt2{
+            margin-right: -45px;
+        }
+    
+    #fimg2{
+        margin-left: -20px;
+       }
+        #fimg2{
+            margin-left: -10px;
+        }
+    
+    #fimgtxt2{
+        margin-left: 25px;
+    }
+    #fimgprice{
     margin-left: -20px;
    }
     #fimg{
