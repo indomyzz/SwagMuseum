@@ -1062,11 +1062,31 @@ width: 100%;
 }
  }
  @media only screen and (max-width:390px){
+    .sp4{
+        margin-right:25px;
+     }
+    #simg4{
+            margin-left: 5px;
+            
+        }
+        #simgtxt4{
+            margin-right: -45px;
+        }
+    .sp3{
+        margin-right:25px;
+     }
+    #simg3{
+            margin-left: 5px;
+            
+        }
+        #simgtxt3{
+            margin-right: -45px;
+        }
     #ftxt2{
         margin-left: -25px;
     }
     #ftxt3{
-        margin-left: -15px;
+        margin-left: -25px;
     }
     #fimg3{
         margin-left: -10px;
@@ -1123,7 +1143,10 @@ width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        flex-wrap: wrap; /* Allow t-shirts to wrap to the next line */
+        /*
+        flex-wrap: nowrap;*/
+        flex-wrap: wrap;
+      /*  overflow-x: auto;  Allow t-shirts to wrap to the next line */
         gap: 20px; /* Adjust the gap between t-shirts */
     }
     
@@ -1131,9 +1154,14 @@ width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: calc(50% - 10px); /* Adjust the width to leave space for the gap */
+        width: calc(50% - 10px); 
+         
     }
-    
+   /* .t-shirt {
+        flex: 0 0 auto;
+        margin: 0 10px; /* Add some spacing between t-shirts */
+       /* text-align: center;  Center align content 
+    }*/
     .t-shirtsimg {
         max-width: 100%;
         height: auto;
