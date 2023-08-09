@@ -1062,6 +1062,21 @@ width: 100%;
 }
  }
  @media only screen and (max-width:390px){
+    #ftxt2{
+        margin-left: -25px;
+    }
+    #ftxt3{
+        margin-left: -15px;
+    }
+    #fimg3{
+        margin-left: -10px;
+       }
+        #fimgtxt3{
+            margin-left: 25px;
+        }
+        .fp3{
+            margin-left: -25px;
+        }
     .fp2{
         margin-left: -20px;
        }
