@@ -1062,6 +1062,9 @@ width: 100%;
 }
  }
  @media only screen and (max-width:390px){
+   #ftxt5{
+    margin-left: 5px;
+   }
     .sp4{
         margin-right:25px;
      }
