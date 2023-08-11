@@ -3,14 +3,128 @@
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
+.phnpic{
+    margin-top: 120px;
+    width: 100%;
+    height: 100%;
+}
+.firstimg{
+    width:578px;
+    height: 100%;
+}
+.container5 {
+    position: relative; /* Set the container to a relative position */
+}
+
+.inta {
+   margin-left: 263px;
+    position: absolute; /* Position the Instagram logo absolutely within the container */
+    top: 0; /* Adjust the top position as needed */
+    left: 0; /* Adjust the left position as needed */
+    z-index: 999; 
+    font-size: 25px;
+    margin-top: 452px;
+}
+
+.instacont2{
+    filter: brightness(40%);
+    margin-top: -25px;
+    margin-right: 00px;
+    width: 250px;
+    display: flex;
+    }
+    #seimg2{
+        width: 292px;
+        display: flex;
+        margin-left: -5px;
+    }
+    .insta2{
+        display: flex;
+      
+        width: 290px;
+    }
+    .instacont {
+        width: 250px;
+        display: flex;
+    }
+    
+    .insta-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+
+    
+    
+    #seimg {
+        width: 290px;
+        display: flex;
+        margin-left: -5px;
+    }
+    
+    .insta {
+        display: flex;
+        filter: brightness(40%);
+        width: 290px;
+    }
+    
+    
+    /*.instacont{
+   
+    width: 250px;
+    display: flex;
+   
+    }
+    
+.insta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.overlay1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    filter: brightness(400px);
+    color: white;
+    
+    font-size: 20px;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    
+    font-size: 20px;
+    text-align: center;
+}
+    #seimg{
+        width: 287px;
+        display: flex;
+        margin-left: -5px;
+    }
+    .insta{
+        display: flex;
+        filter: brightness(40%);
+        width: 290px;
+    }
+*/
+
 .viewall{
-    margin-left: 400px;
+    margin-left: 440px;
     color: rgb(0, 128, 255);
     white-space: nowrap;
     font-size: 21px;
     border-radius: 20px;
     padding: 10px;
-    margin-top: -20px;
+    margin-top: -70px;
 }
  
 
