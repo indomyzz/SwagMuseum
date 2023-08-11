@@ -1181,6 +1181,87 @@ width: 100%;
 #simg{
     margin-left: 15px;
 }
+#ftxt5{
+    margin-left: 5px;
+   }
+    .sp4{
+        margin-right:25px;
+     }
+    #simg4{
+            margin-left: 5px;
+            
+        }
+        #simgtxt4{
+            margin-right: -50px;
+        }
+    .sp5{
+        margin-right:25px;
+     }
+    #simg5{
+            margin-left: 5px;
+            
+        }
+        #simgtxt5{
+            margin-right: -60px;
+            margin-left: 15px;
+        }
+    #ftxt2{
+        margin-left: -25px;
+    }
+    #ftxt3{
+        margin-left: -25px;
+    }
+    #fimg3{
+        margin-left: -10px;
+       }
+        #fimgtxt3{
+            margin-left: 15px;
+        }
+        .fp3{
+            margin-left: -25px;
+        }
+    .fp2{
+        margin-left: -20px;
+       }
+    .sp2{
+        margin-right:25px;
+     }
+    #simg2{
+            margin-left: -5px;
+        }
+        #simgtxt2{
+            margin-right: -60px;
+        }
+    
+    #fimg2{
+        margin-left: -20px;
+       }
+        #fimg2{
+            margin-left: -10px;
+        }
+    
+    #fimgtxt2{
+        margin-left: 15px;
+    }
+    #fimgprice{
+    margin-left: -20px;
+   }
+    #fimg{
+        margin-left: -10px;
+    }
+
+#fimgtxt{
+    margin-left: 20px;
+}
+ #sprice {
+    margin-right:25px;
+ }
+#simg{
+        margin-left: -5px;
+    }
+    #simgtxt{
+        margin-right: -60px;
+    }
  }
  @media only screen and (max-width:390px){
    #ftxt5{
@@ -1194,17 +1275,18 @@ width: 100%;
             
         }
         #simgtxt4{
-            margin-right: -45px;
+            margin-right: -50px;
         }
-    .sp3{
+    .sp5{
         margin-right:25px;
      }
-    #simg3{
+    #simg5{
             margin-left: 5px;
             
         }
-        #simgtxt3{
-            margin-right: -45px;
+        #simgtxt5{
+            margin-right: -60px;
+            margin-left: 15px;
         }
     #ftxt2{
         margin-left: -25px;
@@ -1231,7 +1313,7 @@ width: 100%;
             margin-left: -5px;
         }
         #simgtxt2{
-            margin-right: -45px;
+            margin-right: -60px;
         }
     
     #fimg2{
@@ -1261,7 +1343,7 @@ width: 100%;
         margin-left: -5px;
     }
     #simgtxt{
-        margin-right: -45px;
+        margin-right: -60px;
     }
     .t-shirts-container {
         display: flex;
