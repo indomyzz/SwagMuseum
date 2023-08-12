@@ -57,11 +57,54 @@
                 </div>
                 <nav>
                     <ul class="menu">
-                        <li><a href="index.html" id="active"><span id="home"> HOME</span></a></li>
-                        <li><a href="marketplace.html">
-                            SHOP</a></li>
-                        <li><a href="#">NEW ARRIVALS</a></li>
-                        <li><a href="#">SIZE GUIDE</a></li>
+                        <li><a href="#" id="active"><span id="home"> HOME</span></a></li>
+                    <!--  <li><a href="#" >
+                          SHOP</a></li> -->  
+            <li class="dropdown__item">
+                     <div class="nav__link">
+                        SHOP <i class="fas fa-angle-down" style="color: #ffffff;"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> ㅤㅤㅤALL
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> ㅤㅤㅤNEW IN 
+                           </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> ㅤㅤㅤTEES
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> ㅤㅤㅤHOODIES
+                            </a>
+                         </li>
+                         <li>
+                            <a href="shorts.html" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> ㅤㅤㅤSHORTS
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> ㅤㅤㅤHATS
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> ㅤㅤㅤACCESSORIES
+                            </a>
+                         </li>
+                          </ul>     
+                        
+                        
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">FAQs</a></li>
                     <li><a href="#">SIGN OUT</a></li>
@@ -119,7 +162,8 @@
             <img src="https://i.pinimg.com/564x/e4/36/d2/e436d2e07d556c87023a638afba2380a.jpg" class="firstimg">
      </div>
 
-    <h1 class="txtphn">NEW IN</h1> 
+    <h1 class="txtphn">NEW IN</h1>
+   
     <p class="p11mobile">S/S23 COLLECTION</p>
    
 
@@ -180,12 +224,12 @@
         <div class="card-text" id="ftxt5">2000-02 AC MILAN Retro Jersey</div>
         <p id="money" class="fp3">$260.00</p>
       </div>
-    <div class="t-shirt" data-name="Raging Bulls Blue Short" data-price="$65.00" id="simgtxt4">
+    <div class="t-shirt" data-name="Raging Bulls Blue Short" data-price="$65.00" id="simgtxt5">
         <a href="buy.html">
-            <img src="https://i.pinimg.com/564x/32/f3/13/32f313150b762d47173c7222026daa9c.jpg" class="t-shirtsimg" id="simg4">
+            <img src="https://i.pinimg.com/564x/3c/e2/ac/3ce2ac2f25147811fe913baee1adbe8c.jpg" class="t-shirtsimg" id="simg5">
         </a>
-        <div class="card-text">Blue Kickset Raging BULLS SHORT</div>
-        <p class="money" id="sp4">$65.00</p>
+        <div class="card-text" id="txt9">81MotorClub Short</div>
+        <p class="money" id="sp5">$65.00</p>
     </div>
 
 
@@ -232,7 +276,33 @@
     </div>
 </div></a>
 
-    <script src="mk.js"></script>
+    <script >
+        const showMenu = (toggleId, navId) => {
+   const toggle = document.getElementById(toggleId),
+         nav = document.getElementById(navId)
+
+   toggle.addEventListener('click', () => {
+       // Toggle the show-menu class to nav menu
+       nav.classList.toggle('show-menu')
+
+       // Toggle the show-icon class to show and hide the menu icon
+       toggle.classList.toggle('show-icon')
+   });
+
+   // Add a click event listener specifically to the toggle button to hide the menu when reclicked
+   toggle.addEventListener('click', (event) => {
+       const target = event.target;
+       if (nav.classList.contains('show-menu')) {
+           nav.classList.remove('show-menu');
+           toggle.classList.remove('show-icon');
+       }
+   });
+}
+
+showMenu('toggle', 'nav');
+
+
+        </script>
 </body>
 </html>
 
