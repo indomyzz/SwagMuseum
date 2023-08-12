@@ -3,6 +3,271 @@
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
+#txt9{
+    margin-left: 15px;
+}
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --black-color: hsl(220, 24%, 12%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --white-color: #fff;
+    --body-color: hsl(220, 100%, 97%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Montserrat", sans-serif;
+    --normal-font-size: .938rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+  
+  /*========== Responsive typography ==========*/
+  @media screen and (min-width: 1024px) {
+    :root {
+      --normal-font-size: 1rem;
+    }
+  }
+  
+  /*=============== BASE ===============*/
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+  }
+  
+  ul {
+    list-style: none;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+  
+  /*=============== HEADER ===============*/
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--z-fixed);
+  }
+  
+  /*=============== NAV ===============*/
+  .nav {
+    height: var(--header-height);
+  }
+  
+  .nav__logo, 
+  .nav__burger, 
+  .nav__close {
+    color: var(--white-color);
+  }
+  
+  .nav__data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: var(--font-semi-bold);
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  .nav__logo i {
+    font-weight: initial;
+    font-size: 1.25rem;
+  }
+  
+  .nav__toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .nav__burger, 
+  .nav__close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+  }
+  
+  .nav__close {
+    opacity: 0;
+  }
+  
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1118px) {
+    .nav__menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100vh - 3.5rem);
+      overflow: auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: top .4s, opacity .3s;
+    }
+    .nav__menu::-webkit-scrollbar {
+      width: 0;
+    }
+    .nav__list {
+      background-color: var(--black-color);
+      padding-top: 1rem;
+    }
+  }
+  
+  .nav__link {
+    color: var(--white-color);
+    background-color: black;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    margin-left: 45px;
+  font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+  }
+  
+  
+  
+  /* Show menu */
+  .show-menu {
+    opacity: 1;
+    top: 3.5rem;
+    pointer-events: initial;
+  }
+  
+  /* Show icon */
+  .show-icon .nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .show-icon .nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  
+  /*=============== DROPDOWN ===============*/
+  .dropdown__item {
+    cursor: pointer;
+  }
+  
+  .dropdown__arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+  }
+  
+  .dropdown__link, 
+  .dropdown__sublink {
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    
+    transition: background-color .3s;
+  }
+  
+  .dropdown__link i, 
+  .dropdown__sublink i {
+    font-size: 1.25rem;
+    font-weight: initial;
+  }
+  
+  .dropdown__link:hover, 
+  .dropdown__sublink:hover {
+    background-color: var(--black-color);
+  }
+  
+  .dropdown__menu, 
+  .dropdown__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+  }
+  
+  /* Show dropdown menu & submenu */
+  .dropdown__item:hover .dropdown__menu, 
+  .dropdown__subitem:hover > .dropdown__submenu {
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+  }
+  
+  /* Rotate dropdown icon */
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  
+  /*=============== DROPDOWN SUBMENU ===============*/
+  .dropdown__add {
+    margin-left: auto;
+  }
+  
+  .dropdown__sublink {
+    background-color: var(--black-color-lighten);
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .nav__link {
+      padding-inline: 1rem;
+    }
+  }
+  
+  /* For large devices */
+  
+  @media screen and (min-width: 992px) {
+    .dropdown__item{
+        display: none;
+    }
+  }
+
 .phnpic{
     margin-top: 120px;
     width: 100%;
@@ -16,15 +281,7 @@
     position: relative; /* Set the container to a relative position */
 }
 
-.inta {
-   margin-left: 263px;
-    position: absolute; /* Position the Instagram logo absolutely within the container */
-    top: 0; /* Adjust the top position as needed */
-    left: 0; /* Adjust the left position as needed */
-    z-index: 999; 
-    font-size: 25px;
-    margin-top: 452px;
-}
+
 
 .instacont2{
     filter: brightness(40%);
@@ -59,7 +316,7 @@
     
     
     #seimg {
-        width: 290px;
+        width: 295px;
         display: flex;
         margin-left: -5px;
     }
@@ -124,7 +381,7 @@
     font-size: 21px;
     border-radius: 20px;
     padding: 10px;
-    margin-top: -70px;
+    margin-top: -45px;
 }
  
 
@@ -282,7 +539,7 @@ font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
     text-transform: capitalize;
     padding: 20px;
     transition: 0.5s ease;
-    margin-left: 35px;
+    margin-left: 50px;
   font-size: 25px;
 }
 .sidebar-wrapper .sidebar nav .menu li a:hover {
@@ -327,16 +584,15 @@ font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
 #active{
     background-color: rgb(21, 21, 21);
     margin-top: -18px;
-    margin-left: -0px;
-    margin-right: -10px;
-    width: 100%;
+    margin-left: 15px;
+    margin-right: 60px;
+    width: 435px;
 }
 
 
 .nav-item {
     margin-right: 20px;
 }
-
 .nav-link {
     text-decoration: none;
     color: #ffffff;
@@ -929,7 +1185,24 @@ color: white;
  }
  
  @media only screen and (max-width: 922px){ 
-   
+    .viewall{
+        margin-left: 440px;
+        color: rgb(0, 128, 255);
+        white-space: nowrap;
+        font-size: 21px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: -15px;
+    }
+    .inta {
+        margin-left: -230px;
+         position: absolute; /* Position the Instagram logo absolutely within the container */
+         top: 0; /* Adjust the top position as needed */
+         left: 0; /* Adjust the left position as needed */
+         z-index: 999; 
+         font-size: 25px;
+         margin-top: 735px;
+     }
     .t-shirts-container {
         display: flex;
         justify-content: space-between;
@@ -1029,7 +1302,7 @@ color: white;
         margin-top: -200px;
     }
     .p11mobile{
-margin-top: -10px;
+margin-top: 0px;
         margin-left: 20px;
         color: grey;
     }
@@ -1037,6 +1310,7 @@ margin-top: -10px;
     font-size: 25px;
     margin-left: 20px;
     font-weight: 300;
+    margin-top: 5px;
     }
     #ocean{
       
@@ -1198,12 +1472,12 @@ width: 100%;
         margin-right:25px;
      }
     #simg5{
-            margin-left: 5px;
+            margin-left: 50px;
             
         }
         #simgtxt5{
-            margin-right: -60px;
-            margin-left: 15px;
+            margin-right: -90px;
+            
         }
     #ftxt2{
         margin-left: -25px;
@@ -1262,9 +1536,61 @@ width: 100%;
     #simgtxt{
         margin-right: -60px;
     }
+    #txt9{
+        margin-left: 40px;
+    }
+    #sp5{
+        margin-left: 30px;
+    }
+    #seimg {
+        width: 295px;
+        display: flex;
+        margin-left: -5px;
+    }
+    #seimg2{
+        width: 295px;
+        display: flex;
+        margin-left: -5px;
+    }
+    .insta2 {
+        display: flex;
+        
+        width: 315px;
+    }
+    .insta {
+        display: flex;
+        filter: brightness(40%);
+        width: 315px;
+    }
  }
  @media only screen and (max-width:390px){
-   #ftxt5{
+    .insta2 {
+        display: flex;
+        
+        width: 300px;
+    }
+    .insta {
+        display: flex;
+        filter: brightness(40%);
+        width: 300px;
+    }
+    #seimg2{
+        width: 285px;
+        display: flex;
+        margin-left: -5px;
+    }
+    #seimg {
+        width: 285px;
+        display: flex;
+        margin-left: -5px;
+    }
+    #sp5{
+        margin-left: -3px;
+    }
+    #txt9{
+        margin-left: 15px;
+    }
+    #ftxt5{
     margin-left: 5px;
    }
     .sp4{
@@ -1413,15 +1739,23 @@ width: 100%;
         margin-top: 20px; /* Add some spacing from the t-shirts */
      }
      
-     .btnviewall {
-        padding: 10px 20px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        border: none;
-        border-radius: 10px;
-        font-size: 18px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
+
+     .viewall{
+        margin-left: 440px;
+        color: rgb(0, 128, 255);
+        white-space: nowrap;
+        font-size: 21px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: -45px;
+    }
+    .inta {
+        margin-left: 270px;
+         position: absolute; /* Position the Instagram logo absolutely within the container */
+         top: 0; /* Adjust the top position as needed */
+         left: 0; /* Adjust the left position as needed */
+         z-index: 999; 
+         font-size: 25px;
+         margin-top: 400px;
      }
-     
  }
