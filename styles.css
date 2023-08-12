@@ -3,6 +3,16 @@
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
+#dropdownicon{
+    margin-left: 270px;
+}
+.dropdownicon {
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+.dropdown:hover .dropdownicon {
+    transform: rotate(180deg);
+}
 #txt9{
     margin-left: 15px;
 }
@@ -1476,7 +1486,7 @@ width: 100%;
             
         }
         #simgtxt5{
-            margin-right: -90px;
+            margin-right: -150px;
             
         }
     #ftxt2{
@@ -1611,7 +1621,7 @@ width: 100%;
             
         }
         #simgtxt5{
-            margin-right: -60px;
+            margin-right: -130px;
             margin-left: 15px;
         }
     #ftxt2{
@@ -1747,15 +1757,15 @@ width: 100%;
         font-size: 21px;
         border-radius: 20px;
         padding: 10px;
-        margin-top: -45px;
+        margin-top: -15px;
     }
     .inta {
-        margin-left: 270px;
+        margin-left: -205px;
          position: absolute; /* Position the Instagram logo absolutely within the container */
          top: 0; /* Adjust the top position as needed */
          left: 0; /* Adjust the left position as needed */
          z-index: 999; 
          font-size: 25px;
-         margin-top: 400px;
+         margin-top: 700px;
      }
  }
