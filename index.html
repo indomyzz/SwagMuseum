@@ -29,7 +29,7 @@
     <div class="Tcont">
         <div class="things">
             
-            <p class="theT">Shop <i class="fas fa-caret-down"></i></p>
+          
             
              
             
@@ -62,7 +62,7 @@
                           SHOP</a></li> -->  
             <li class="dropdown__item">
                      <div class="nav__link">
-                        SHOP <i class="fas fa-angle-down" style="color: #ffffff;"></i>
+             <p class="dropdown"> SHOP <i class="fas fa-angle-down dropdownicon" style="color: #ffffff;" id="dropdownicon"></i></p>
                      </div>
 
                      <ul class="dropdown__menu">
@@ -292,32 +292,20 @@
   // Get all the t-shirts and attach click event listeners to them
   const tShirts = document.querySelectorAll('.t-shirt');
   tShirts.forEach(tShirt => tShirt.addEventListener('click', handleTeeClick)); 
-      
-      
-      const showMenu = (toggleId, navId) => {
-   const toggle = document.getElementById(toggleId),
-         nav = document.getElementById(navId)
+  const toggleDropdown = () => {
+    const dropdownMenu = document.querySelector('.dropdown__menu');
+    const nav = document.getElementById('toggle');
 
-   toggle.addEventListener('click', () => {
-       // Toggle the show-menu class to nav menu
-       nav.classList.toggle('show-menu')
+    if (nav.classList.contains('show-menu')) {
+        nav.classList.remove('show-menu');
+        dropdownMenu.style.maxHeight = '0';
+    } else {
+        nav.classList.add('show-menu');
+        dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + 'px';
+    }
+};
 
-       // Toggle the show-icon class to show and hide the menu icon
-       toggle.classList.toggle('show-icon')
-   });
-
-   // Add a click event listener specifically to the toggle button to hide the menu when reclicked
-   toggle.addEventListener('click', (event) => {
-       const target = event.target;
-       if (nav.classList.contains('show-menu')) {
-           nav.classList.remove('show-menu');
-           toggle.classList.remove('show-icon');
-       }
-   });
-}
-
-showMenu('toggle', 'nav');
-
+document.getElementById('toggle').addEventListener('click', toggleDropdown);
 
         </script>
 </body>
