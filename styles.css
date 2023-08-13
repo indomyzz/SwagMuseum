@@ -3,6 +3,24 @@
 @import url('https://fonts.cdnfonts.com/css/redwinger-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
+#t5xt{
+    margin-left: 5px;
+}
+.containerbest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 18px;
+  }
+  
+ 
+  .t-shirts {
+    text-align: center;
+  }
+  
+  
+  
 #dropdownicon{
     margin-left: 270px;
 }
@@ -915,7 +933,7 @@ margin-top: -40px;
  width: 900px;
  }
  #up2{
-  width: 570px;
+  width: 580px;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -1603,6 +1621,14 @@ width: 100%;
         filter: brightness(40%);
         width: 315px;
     }
+    .firstimg{
+        width:600px;
+        height: 100%;
+    }
+    .styleimg{
+        width: 600px;
+        margin-top: -23px;
+     }
  }
  @media only screen and (max-width:390px){
     .sp2s{
@@ -1839,7 +1865,7 @@ width: 100%;
        margin-top: -22px;
      }
      .styleimg{
-        width: 590px;
-        
+        width: 600px;
+        margin-top: 1px;
      }
  }
