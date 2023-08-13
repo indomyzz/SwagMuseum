@@ -284,7 +284,7 @@
     height: 100%;
 }
 .firstimg{
-    width:578px;
+    width:590px;
     height: 100%;
 }
 .container5 {
@@ -903,6 +903,33 @@ px;
     font-size: 20px;
     margin-top: -50px;
  }
+ #upcont2{
+    background-color: rgb(0, 0, 0);
+margin-top: -40px;
+   color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+ padding: 10px;
+ width: 900px;
+ }
+ #up2{
+  width: 570px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation-timing-function: linear; 
+height: 45px;
+/*animation-name: Move;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+width: 100%;*/
+
+
+ }
+ 
  #upcont{
     background-color: rgb(255, 119, 0);
  position: fixed;
@@ -934,7 +961,7 @@ color: white;
 }
 
 100%{
-  transform: translateX(530px);
+  transform: translateX(550px);
 }
  }
  @media only screen and (min-width:922px){
@@ -1312,9 +1339,13 @@ color: white;
         margin-top: -200px;
     }
     .p11mobile{
-margin-top: 0px;
+margin-top:10px;
         margin-left: 20px;
         color: grey;
+    }
+    #MONTH{
+        margin-top: -10px;
+        margin-right: 250px;
     }
     .txtphn{
     font-size: 25px;
@@ -1476,7 +1507,7 @@ width: 100%;
             
         }
         #simgtxt4{
-            margin-right: -50px;
+            margin-right: -45px;
         }
     .sp5{
         margin-right:25px;
@@ -1486,7 +1517,7 @@ width: 100%;
             
         }
         #simgtxt5{
-            margin-right: -150px;
+            margin-right: -50px;
             
         }
     #ftxt2{
@@ -1514,7 +1545,7 @@ width: 100%;
             margin-left: -5px;
         }
         #simgtxt2{
-            margin-right: -60px;
+            margin-right: -45px;
         }
     
     #fimg2{
@@ -1544,7 +1575,7 @@ width: 100%;
         margin-left: -5px;
     }
     #simgtxt{
-        margin-right: -60px;
+        margin-right: -45px;
     }
     #txt9{
         margin-left: 40px;
@@ -1574,6 +1605,38 @@ width: 100%;
     }
  }
  @media only screen and (max-width:390px){
+    .sp2s{
+        margin-right: 60px;
+    }
+    #t4xt{
+        margin-right: 65px;
+    }
+    #simg2s{
+        margin-left: -45px;
+    }
+    #simgtxt2s{
+        margin-right: 25px;
+       
+    }
+    #sprices{
+        margin-right: 60px;
+    }
+    #twtxt{
+        margin-right: 65px;
+    }
+    #simgs{
+        margin-left: -45px;
+    }
+    #simgtxts{
+        margin-right: 25px;
+       
+    }
+    #fimgtxt2s{
+        margin-left: -25px;
+    }
+    #fimgtxts{
+        margin-left: -25px;
+    }
     .insta2 {
         display: flex;
         
@@ -1621,8 +1684,8 @@ width: 100%;
             
         }
         #simgtxt5{
-            margin-right: -130px;
-            margin-left: 15px;
+            margin-right: -100px;
+            margin-left: px;
         }
     #ftxt2{
         margin-left: -25px;
@@ -1705,7 +1768,7 @@ width: 100%;
        /* text-align: center;  Center align content 
     }*/
     .t-shirtsimg {
-        max-width: 100%;
+        max-width: 400px;
         height: auto;
     }
     
@@ -1767,5 +1830,16 @@ width: 100%;
          z-index: 999; 
          font-size: 25px;
          margin-top: 700px;
+     }
+     .stylecont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       margin-top: -22px;
+     }
+     .styleimg{
+        width: 590px;
+        
      }
  }
