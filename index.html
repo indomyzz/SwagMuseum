@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" href="images/icon1.png">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    
+  
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+            
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 
@@ -333,27 +336,47 @@
             <p id="money"><del>$199.00</del></p>
             <button class="addtocard"><del>PURCHASE NOW!</del></button>
           </div>
-          <div class="t-shirts" data-name="PINK BAPE LR STAR HOODIE" data-price="$115.00" id="bapehodie">
+          <div class="t-shirts" data-name="BLACK SCARFACE GRAPHIC TEE" data-price="$115.00" id="bapehodie">
             
             <div class="image-containerd">
-            <img src="https://i.pinimg.com/564x/18/1e/99/181e9926b043590e0b3d72947bc53073.jpg" class="t-shirtsimgs">
+            <img src="https://i.pinimg.com/564x/35/43/e5/3543e52edae555502f6f15ea253be0c7.jpg" class="t-shirtsimgs">
             <span class="image-text">SOLD OUT</span>
             </div>
        
-        <div class="card-text" id="t5xt"><del>BLACK N RED GRAPHIC TEE</del> </div>
+        <div class="card-text" id="t5xt"><del>BLACK SCARFACE GRAPHIC TEE</del> </div>
         <p id="money"><del>$199.00</del></p>
         <button class="addtocard"><del>PURCHASE NOW!</del></button>
       </div>
         
       </div>
+      <h1 class="txtphn">REVIEWS</h1>
+ 
+      <section class="container">
+        <div class="slider">
+          <div class="slide slide-1">
+            <div class="slide-text">
+              <p class="testimonial-text">" Fantastic clothes! i left a glowing 5-star review. Thank you for the high quality clothes @indomyzz "</p>
+              <h5 class="author-name">John Maknel<span> FASHION EXPERT</span></h5>
+            </div>
+            <div class="slide-image"><img src="https://i.pinimg.com/564x/a9/51/82/a95182cb514786131eb63eecc660b473.jpg" alt=""></div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slide-text">
+              <p class="testimonial-text">“ If you want to lay the best foundation possible I’d recommend taking this course. 
+                The depth the instructors go into is incredible. I now feel so confident about 
+                starting up as a professional developer. ”</p>
+              <h5 class="author-name">John Tarkpor<span>Junior Front-end Developer</span></h5>
+            </div>
+            <div class="slide-image"><img src="./images/image-john.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
     
-      
-      
-      
-
-   
-
-    <script >
+     
+  
+    
+  
+<script>
      function handleTeeClick(event) {
     const tShirt = event.currentTarget;
     const name = tShirt.dataset.name;
@@ -384,7 +407,63 @@
 
 document.getElementById('toggle').addEventListener('click', toggleDropdown);
 
-        </script>
+
+/*
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const slides = document.querySelectorAll('.slide');
+
+let index = 0;
+
+function nextSlide (){
+    index ++;
+    if(index> slides.length-1){
+        index=0
+    }
+    slides.forEach((slide) => {
+		slide.style.display = 'none'
+    });
+    slides[index].style.display = 'flex';
+}
+
+function prevSlide () {
+    index --;
+    if(index< 0){
+        index = slides.length -1;
+    }
+    slides.forEach((slide) => {
+		slide.style.display = 'none'
+    });
+    slides[index].style.display = 'flex';
+}
+
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
+*/
+
+
+const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].style.display = 'none';
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].style.display = 'block';
+    }
+
+    function autoSlide() {
+      showSlide(currentSlide + 1);
+      setTimeout(autoSlide, 2000); // Change slide every 5 seconds
+    }
+
+    // Start automatic slideshow
+    document.addEventListener('DOMContentLoaded', () => {
+      showSlide(currentSlide);
+      autoSlide();
+    });
+</script>
+
+
 </body>
 </html>
 
