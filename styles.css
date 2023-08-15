@@ -4,6 +4,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+#ind{
+
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+.boringtxt{
+    background-color: black;
+    color: white;
+    width: 600px!important ;
+    padding: 50px;
+    font-weight: 100 !important;
+    gap: 20px;
+}
+.footcont{
+
+    background-color: black;
+    color: white;
+    width: 900px!important ;
+    height: 100%;
+}
+.indomyzz{
+    margin-top:20px;
+    font-size: 20px;
+    font-weight: 700;
+ margin-right: 62px;
+    justify-content: center;
+    text-align: center;
+    
+}
+#rate {
+    font-size: 50px !important;
+    text-align: center  ;
+    white-space: nowrap !important;
+    
+  }
+  
+  /*star item*/
+  #rate li {
+    list-style: none;
+    display: inline-block;
+    color: grey;
+   
+    margin-left: 60px;
+  }
+  
+  /*result heading*/
+  #result {
+    font-size: 42px;
+    text-align: center;
+    color: rgb(248, 211, 217);
+    font-style: italic;
+  }
+  
+  /*part of result heading*/
+  
+  
+  /*responsive design for stars*/
+  @media screen and (max-width: 700px) {
+   
+    ul {font-size: 70px;}
+    #result {font-size: 36px;}
+  }
+  
+
 .followus{
     display: flex;
     justify-content: center;
@@ -647,7 +713,7 @@
 */
 
 .viewall{
-    margin-left: 40px;
+    margin-left: 0px;
     color: rgb(255, 255, 255) !important;
     white-space: nowrap;
     font-size: 21px;
@@ -1487,14 +1553,14 @@ color: white;
  
  @media only screen and (max-width: 922px){ 
     .viewall{
-        margin-left: 440px;
+        margin-left: 40px;
         color: white;
         white-space: nowrap;
         font-size: 21px;
         background-color: black;
         padding: 10px;
         margin-top: -15px;
-        text-decoration: underline;
+     
     }
     .inta {
         margin-left: -230px;
@@ -2107,7 +2173,7 @@ width: 100%;
      
 
      .viewall{
-        margin-left: 210px;
+        margin-left: 180px;
         color: rgb(0, 128, 255);
         white-space: nowrap;
         font-size: 21px;
