@@ -4,12 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
-
+.copyright{
+    justify-content: center;
+    text-align: center;
+   
+}
 #ind{
 
     justify-content: center;
     text-align: center;
-    font-weight: 700;
+    font-size: 30px;
+}
+.boring{
+    margin-top: 20px;
 }
 .boringtxt{
     background-color: black;
@@ -17,7 +24,7 @@
     width: 600px!important ;
     padding: 50px;
     font-weight: 100 !important;
-    gap: 20px;
+    
 }
 .footcont{
 
@@ -48,7 +55,7 @@
     display: inline-block;
     color: grey;
    
-    margin-left: 60px;
+    margin-left: 55px;
   }
   
   /*result heading*/
@@ -713,11 +720,11 @@
 */
 
 .viewall{
-    margin-left: 0px;
+    margin-left:0px;
     color: rgb(255, 255, 255) !important;
     white-space: nowrap;
     font-size: 21px;
-    
+    font-weight: 700 !important;
     padding: 10px;
     margin-top: -45px;
     background-color: orange;
@@ -1553,7 +1560,7 @@ color: white;
  
  @media only screen and (max-width: 922px){ 
     .viewall{
-        margin-left: 40px;
+        margin-right: 40px;
         color: white;
         white-space: nowrap;
         font-size: 21px;
@@ -1861,7 +1868,7 @@ width: 100%;
         margin-right: -25px;
     }
     .viewall{
-        margin-left: 210px;
+        margin-left: 180px;
         color: white;
         white-space: nowrap;
         font-size: 21px;
