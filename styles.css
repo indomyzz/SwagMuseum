@@ -4,6 +4,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+.followus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 230px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.line{
+    border-bottom: 1px solid rgb(154, 154, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: 150px;
+}
+.instaimg{
+    width: 600px;
+}
+.instagramm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .prv{
    margin-left: -45px;
     margin-top: 10px;
@@ -218,6 +244,7 @@
 #bapehodie{
     margin-top: 30px;
 }
+
 #t5xt{
     margin-left: 5px;
 }
@@ -530,7 +557,7 @@
 .instacont2{
     filter: brightness(40%);
     margin-top: -25px;
-    margin-right: 00px;
+    margin-left: 0px;
     width: 250px;
     display: flex;
     }
@@ -547,6 +574,7 @@
     .instacont {
         width: 250px;
         display: flex;
+        margin-left: -260px;
     }
     
     .insta-container {
@@ -619,13 +647,14 @@
 */
 
 .viewall{
-    margin-left: 440px;
-    color: rgb(0, 128, 255);
+    margin-left: 40px;
+    color: rgb(255, 255, 255) !important;
     white-space: nowrap;
     font-size: 21px;
-    border-radius: 20px;
+    
     padding: 10px;
     margin-top: -45px;
+    background-color: orange;
 }
  
 
@@ -1139,7 +1168,7 @@ px;
  }
  #upcont2{
     background-color: rgb(0, 0, 0);
-margin-top: -40px;
+
    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -1459,12 +1488,13 @@ color: white;
  @media only screen and (max-width: 922px){ 
     .viewall{
         margin-left: 440px;
-        color: rgb(0, 128, 255);
+        color: white;
         white-space: nowrap;
         font-size: 21px;
-        border-radius: 20px;
+        background-color: black;
         padding: 10px;
         margin-top: -15px;
+        text-decoration: underline;
     }
     .inta {
         margin-left: -230px;
@@ -1764,6 +1794,17 @@ width: 100%;
     #ftxt3{
         margin-right: -25px;
     }
+    .viewall{
+        margin-left: 210px;
+        color: white;
+        white-space: nowrap;
+        font-size: 21px;
+       
+        padding: 10px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+       border: none;
+    }
     #fimg3{
         margin-right: -15px;
        }
@@ -1839,7 +1880,8 @@ width: 100%;
     .insta {
         display: flex;
         filter: brightness(40%);
-        width: 315px;
+        width: 335px;
+        margin-left: -35px;
     }
     .firstimg{
         width:600px;
@@ -1899,7 +1941,7 @@ width: 100%;
     .insta {
         display: flex;
         filter: brightness(40%);
-        width: 300px;
+        width: 320px;
     }
     #seimg2{
         width: 285px;
@@ -2065,16 +2107,17 @@ width: 100%;
      
 
      .viewall{
-        margin-left: 440px;
+        margin-left: 210px;
         color: rgb(0, 128, 255);
         white-space: nowrap;
         font-size: 21px;
-        border-radius: 20px;
+       
         padding: 10px;
-        margin-top: -15px;
+        
+      
     }
     .inta {
-        margin-left: -205px;
+       
          position: absolute; /* Position the Instagram logo absolutely within the container */
          top: 0; /* Adjust the top position as needed */
          left: 0; /* Adjust the left position as needed */
@@ -2087,7 +2130,7 @@ width: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
-       margin-top: -22px;
+       margin-top: -25px;
      }
      .styleimg{
         width: 600px;
