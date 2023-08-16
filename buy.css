@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;500&family=Poppins:wght@400;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/amonus');
+
+#upcont{
+    background-color: rgb(255, 119, 0);
+ position: fixed;
+    margin-top: -130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+   z-index: 1000;
+ }
+ #up{
+  font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation-timing-function: linear; 
+height: 45px;
+animation-name: Move;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+width: 100%;
+color: white;
+
+ }
+ @keyframes Move {
+0% {
+  transform: translateX(-600px); 
+}
+
+100%{
+  transform: translateX(550px);
+}
+ }
 body{
     padding: 0;
     margin: 0;
@@ -22,7 +57,7 @@ margin-left: calc(500px + 25px + 1.5px);
 width: calc(100% - (500px + 25px + 1.5px)); 
 }
 #selectedTeeName {
-font-size: 30px;
+
        
 margin-top: -190px;
     display: flex;
@@ -121,6 +156,131 @@ margin-top: -360px;
 .navbar-logo2 {
     text-decoration: none;
 }
+@media only screen and (max-width:390px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .containersize {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+        
+      }
+    .sizes{
+        
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 20px;
+      }
+    /*#selectedTeePrice {
+        margin-left: 20px;
+     margin-top: -300px;
+        font-size: 20px;
+        white-space: nowrap;
+        margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    #selectedTeeName {
+        margin: 0 auto;
+        font-size: 20px;
+        white-space: nowrap;
+    margin-top: -200px;
+        margin-bottom: -500px;
+    }
+    #selectedTeeImage{
+        width: 400px;
+        height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+    
+   
+    margin-top: -210px;
+    } */
+    #selectedTeePrice {
+        position: relative;
+        top:  0;
+        margin-top: -300px;
+           font-size: 15px !important;
+           white-space: nowrap;
+           margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #selectedTeeName {
+           margin: 0 auto;
+           font-size: 18px !important;
+           white-space: nowrap;
+      
+       }
+       #selectedTeeImage{
+           width: 350px !important;
+           height: 350px !important;
+   
+       
+      
+       margin-top: -210px;
+       } 
+       #btn1{
+        color: white;
+        background-color: black;
+    transition: all 0.3s ease-in-out;
+     }
+     #btn1:hover{
+        background-color: rgb(34, 34, 34);
+    
+     }
+     #btn2{
+       background-color: rgb(223, 223, 223);
+        margin-top: 0px;
+        transition: all 0.3s ease-in-out;
+     }
+     #btn2:hover{
+        background-color: rgb(197, 197, 197);
+         margin-top: 0px;
+      }
+    
+      .btns{
+      
+        font-size: 10px;
+        border-radius: 17px;
+        border: none;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       height: 50px;
+        width: 250px;
+     }
+     .btnconatiner{
+        margin-top: -200px;
+        margin-left: px;
+      
+             }
+}
+@media only screen and (max-width:350px){
+    .btnconatiner{
+        margin-top: -200px;
+             }
+             .containersize {
+                display: flex;
+                justify-content: center;
+                margin-top: -200px;
+                margin-left: 20px;
+              }
+}
 @media only screen and (max-width:975px){
   
     #btn1{
@@ -157,7 +317,7 @@ margin-top: -200px;
        height: 50px;
         width: 350px;
      }
-    .container {
+     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -192,7 +352,7 @@ margin-top: -200px;
     }
     #selectedTeeName {
         margin: 0 auto;
-        font-size: 23px;
+        font-size: 20px;
         white-space: nowrap;
     margin-top: -200px;
         margin-bottom: -500px;
@@ -205,7 +365,7 @@ margin-top: -200px;
    
     margin-top: -210px;
     } 
-
+    
 }
 @media only screen and (min-width:975px){
     .editsize:hover{
